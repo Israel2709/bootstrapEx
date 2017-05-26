@@ -1,4 +1,30 @@
-.btn-default{
-  background-color: #28c4e5;
+.btn-default {
+  background-color: #29c4e6;
+  color: white; }
+
+h1.tittle {
+  background-color: #29c4e6;
   color: white;
-}
+  padding: 10px; }
+
+.container-fluid .jumbotron {
+  background-color: #29c4e6;
+  color: white;
+  border-radius: 0px;
+  padding: 20px; }
+
+.marginB20 {
+  margin-bottom: 20px; }
+
+p.subtittle {
+  padding: 5px;
+  background-color: #29c4e6;
+  color: white; }
+
+p.text-right {
+  color: #6d939c; }
+
+p.text-blue {
+  color: #29c4e6; }
+
+/*# sourceMappingURL=styles.css.map */
