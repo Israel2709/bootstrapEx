@@ -1,0 +1,200 @@
+$blue-color: #29c5e5;
+$gray-color: #f4f4f4;
+
+$break-small:758px;
+$break-medium:992px;
+
+
+body{
+    background: $gray-color;
+}
+
+.logo{
+    width: 50%;
+}
+
+.title-section{
+    position: relative;
+    margin-bottom: 10px;
+    background: repeating-linear-gradient(
+      -45deg,
+      rgba(0, 0, 0, 0) 53px,
+      rgba(0, 0, 0, 0) 56px,
+      #7e7e7e 40px,
+       #7e7e7e 58px
+    );
+    h3{
+        font-weight: bold;
+        position: relative;
+        height: 100%;
+        background-color:$gray-color;
+        width:150px;
+        margin-left: 25px;
+        padding:12px;
+    }
+}
+
+ul.left-menu{
+    list-style-type: square;
+    .list-group-item{
+        background-color:#f2f2f2;
+        &:first-child{
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+        }
+        &:last-child{
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+
+        .square{
+            background-color: #7e7e7e;
+            width: 10px;
+            height: 10px;
+            float: left;
+            margin-top: 5px;
+            margin-right: 10px;
+        }
+
+        &.selected{
+            color:$blue-color;
+            .square{
+                background-color:$blue-color;
+            }
+        }
+    }
+}
+
+.jumbotron{
+    background-color: $blue-color;
+    color:white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 0px;
+    p{  
+        text-align: justify;
+        font-size: 34px;
+        font-style: italic;
+    }
+}
+
+//menu -> los padding deben de regresar a 15px cuando sea movil left y right
+.navbar{
+    border-radius: 0px;
+    .container-fluid{
+        padding: 0px;
+        @media screen and (max-width: $break-small) {
+           padding: 0px 15px 0px 15px;
+        }
+
+        .navbar-collapse{
+            padding: 0px;
+             @media screen and (max-width: $break-small) {
+                padding: 0px 15px 0px 15px;
+            }
+            .navbar-nav{
+                li{
+                    //width: (1138/8) + px;
+                    text-align: center;
+                    &.active{
+                        a{
+                        color:white;
+                        background-color: $blue-color;
+                        }
+                    }
+
+                    a{
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        @media screen and (min-width: $break-small) and (max-width:$break-medium) {
+                            padding-left: 8px;
+                            padding-right: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.panel{
+    background: $gray-color;
+    &.panel-blue{
+        border:1px solid transparent;
+        .panel-heading{
+            background-color: $blue-color;
+            color:white;
+        }
+
+        .panel-body{
+            border:1px solid #ddd;
+            padding: 5px;
+        }
+    }
+
+    .thumbnail {
+        .caption {
+            h4 {
+                color:gray;
+            }
+            p {
+                color: $blue-color;
+            }
+        }
+    }
+}
+
+.footer{
+    background-color: #7e7e7e;
+
+    h4,p{
+        color:white;
+    }
+
+    h4{
+        margin-top: 20px;
+        border-bottom: 1px solid white;
+    }
+
+    img{
+        width: 40px;
+        height: auto;
+        float: left;
+        margin-left: 10px;
+
+        &.logo{
+            width: 100%;
+        }
+    }
+
+    .site-map{
+        p{
+            width: 50%;
+            &:nth-child(odd){
+                float:right
+            }
+
+            &:nth-child(even){
+                float:left;
+            }
+        }
+        
+        
+    }
+}
+
+.input-group{
+    margin-top: 15px;
+    padding-top: 20px;
+    .form-control{
+        border-radius: 0px;
+        background-color:#f3f3f3;
+    }
+    .input-group-addon{
+        background-color:$blue-color;
+        color:white;
+        border-radius: 0px;
+    }
+}
+
+    
