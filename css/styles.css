@@ -19,6 +19,9 @@ body {
 
 ul.left-menu {
   list-style-type: square; }
+  @media screen and (max-width: 758px) {
+    ul.left-menu {
+      display: none; } }
   ul.left-menu .list-group-item {
     background-color: #f2f2f2; }
     ul.left-menu .list-group-item:first-child {
@@ -79,6 +82,9 @@ ul.left-menu {
   background: #f4f4f4; }
   .panel.panel-blue {
     border: 1px solid transparent; }
+    @media screen and (max-width: 758px) {
+      .panel.panel-blue {
+        display: none; } }
     .panel.panel-blue .panel-heading {
       background-color: #29c5e5;
       color: white; }

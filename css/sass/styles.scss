@@ -35,6 +35,9 @@ body{
 }
 
 ul.left-menu{
+    @media screen and (max-width: $break-small) {
+        display:none;
+    }
     list-style-type: square;
     .list-group-item{
         background-color:#f2f2f2;
@@ -120,6 +123,9 @@ ul.left-menu{
 .panel{
     background: $gray-color;
     &.panel-blue{
+        @media screen and (max-width: $break-small) {
+            display:none;
+        }
         border:1px solid transparent;
         .panel-heading{
             background-color: $blue-color;
